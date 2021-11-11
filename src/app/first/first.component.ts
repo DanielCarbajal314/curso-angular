@@ -6,6 +6,9 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./first.component.scss']
 })
 export class FirstComponent implements OnInit, OnDestroy {
+  counter = 200;
+  styleExpression = "width: 200px"
+
 
   constructor() { }
   ngOnDestroy(): void {
@@ -14,6 +17,11 @@ export class FirstComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     console.log('estoy iniciando');
+  }
+
+  count(){
+    this.counter+=10;
+    this.styleExpression = `width: ${this.counter}px`
   }
 
 }
