@@ -13,6 +13,9 @@ import { BasicFormComponent } from './basic-form/basic-form.component';
 import { ComunicationComponent } from './comunication/comunication.component';
 import { CuadraroComponent } from './comunication/cuadraro/cuadraro.component';
 import { SaludadorComponent } from './comunication/saludador/saludador.component';
+import { PersonRegistryComponent } from './person-registry/person-registry.component';
+import { PersonFormComponent } from './person-registry/person-form/person-form.component';
+import { PersonTableComponent } from './person-registry/person-table/person-table.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { SaludadorComponent } from './comunication/saludador/saludador.component
     BasicFormComponent,
     ComunicationComponent,
     CuadraroComponent,
-    SaludadorComponent
+    SaludadorComponent,
+    PersonRegistryComponent,
+    PersonFormComponent,
+    PersonTableComponent
   ],
   imports: [
     BrowserModule,
