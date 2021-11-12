@@ -7,6 +7,8 @@ import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { PartOfSecondComponent } from './second/part-of-second/part-of-second.component';
 import { ThirdComponent } from './third/third.component';
+import { SnakePipe } from './pipes/snake-case-pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ThirdComponent } from './third/third.component';
     FirstComponent,
     SecondComponent,
     PartOfSecondComponent,
-    ThirdComponent
+    ThirdComponent,
+    SnakePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,14 @@
-<p>Hola Soy el tercer componente</p>
+<div>
+    <button (click)="changeColor()" >Cambiar De Color</button>
+    <div class="square" [style]="colorExpression">
+        {{colorName}}
+    </div>
+
+    <h3> La fecha/Hora de hoy es {{ dateTimeNow | date:'short' }}</h3>
+    <h2> {{ 'Esto es Snake Case en accion' | snakeCase: '-' }} </h2>
+
+    <label>Colores Disponibles</label>
+    <ul>
+        <li *ngFor="let color of colors;">{{color.name}}</li>
+    </ul>
+</div>

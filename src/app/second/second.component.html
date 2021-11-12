@@ -1,1 +1,6 @@
-<p>second works!</p>
+<label>Nombre</label>
+<input type="text" [(ngModel)]="name">
+<button (click)="clear()" >Borrar</button>
+<p *ngIf="thereIsName">
+    hola <span [ngClass]="nameIsLong ? 'name-is-long' : ''">{{name}}!</span>
+</p>
