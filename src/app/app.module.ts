@@ -9,6 +9,10 @@ import { PartOfSecondComponent } from './second/part-of-second/part-of-second.co
 import { ThirdComponent } from './third/third.component';
 import { SnakePipe } from './pipes/snake-case-pipe';
 import { FormsModule } from '@angular/forms';
+import { BasicFormComponent } from './basic-form/basic-form.component';
+import { ComunicationComponent } from './comunication/comunication.component';
+import { CuadraroComponent } from './comunication/cuadraro/cuadraro.component';
+import { SaludadorComponent } from './comunication/saludador/saludador.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { FormsModule } from '@angular/forms';
     SecondComponent,
     PartOfSecondComponent,
     ThirdComponent,
-    SnakePipe
+    SnakePipe,
+    BasicFormComponent,
+    ComunicationComponent,
+    CuadraroComponent,
+    SaludadorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<div>
+    <label>Casado?</label>
+    <input type="checkbox" [(ngModel)]="married">
+</div>
+<div *ngIf="married">
+    <label>Nombre Conyugue</label>
+    <input [(ngModel)]="coupleName">
+</div>
+<div>
+    <button (click)="newChild()">Registrar Hijo</button>
+    <div *ngFor="let childName of childNames; index as i;">
+        <input type="text" [(ngModel)]="childNames[i]">
+        <p>{{childName}}</p>
+    </div>
+</div>
+
+

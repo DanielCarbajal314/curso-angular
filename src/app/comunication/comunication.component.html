@@ -1,0 +1,7 @@
+<saludador></saludador>
+<cuadraro
+    *ngFor="let square of squaresInformation"
+    [color]="square.color"
+    [size]="square.size"
+    (hellow)="handleHellowSquareEvent($event)"
+    ></cuadraro>
