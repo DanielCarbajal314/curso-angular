@@ -16,6 +16,8 @@ import { SaludadorComponent } from './comunication/saludador/saludador.component
 import { PersonRegistryComponent } from './person-registry/person-registry.component';
 import { PersonFormComponent } from './person-registry/person-form/person-form.component';
 import { PersonTableComponent } from './person-registry/person-table/person-table.component';
+import { PhotosAlbumComponent } from './photos-album/photos-album.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { PersonTableComponent } from './person-registry/person-table/person-tabl
     SaludadorComponent,
     PersonRegistryComponent,
     PersonFormComponent,
-    PersonTableComponent
+    PersonTableComponent,
+    PhotosAlbumComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

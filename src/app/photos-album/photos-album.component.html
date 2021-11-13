@@ -1,0 +1,6 @@
+<button (click)="loadServerData()">Cargar Datos Del Servidor</button>
+
+<div *ngFor="let photo of photos">
+    <h3>{{photo.title}}</h3>
+    <img [src]="photo.thumbnailUrl">
+</div>
