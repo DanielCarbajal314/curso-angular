@@ -17,7 +17,10 @@ import { PersonRegistryComponent } from './person-registry/person-registry.compo
 import { PersonFormComponent } from './person-registry/person-form/person-form.component';
 import { PersonTableComponent } from './person-registry/person-table/person-table.component';
 import { PhotosAlbumComponent } from './photos-album/photos-album.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { TaskFormComponent } from './task-form/task-form.component';
+import { TaskRegistryFormComponent } from './task-form/task-registry-form/task-registry-form.component';
+import { TaskTableComponent } from './task-form/task-table/task-table.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { HttpClientModule } from '@angular/common/http'
     PersonRegistryComponent,
     PersonFormComponent,
     PersonTableComponent,
-    PhotosAlbumComponent
+    PhotosAlbumComponent,
+    TaskFormComponent,
+    TaskRegistryFormComponent,
+    TaskTableComponent
   ],
   imports: [
     BrowserModule,

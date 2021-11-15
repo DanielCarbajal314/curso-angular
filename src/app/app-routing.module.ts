@@ -6,6 +6,7 @@ import { FirstComponent } from './first/first.component';
 import { PersonRegistryComponent } from './person-registry/person-registry.component';
 import { PhotosAlbumComponent } from './photos-album/photos-album.component';
 import { SecondComponent } from './second/second.component';
+import { TaskFormComponent } from './task-form/task-form.component';
 import { ThirdComponent } from './third/third.component';
 
 const routes: Routes = [
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'basic-form', component: BasicFormComponent },
   { path: 'basic-comunication', component: ComunicationComponent },  
   { path: 'person-form', component: PersonRegistryComponent },  
-  { path: 'photos', component: PhotosAlbumComponent },  
+  { path: 'photos', component: PhotosAlbumComponent }, 
+  { path: 'task', component: TaskFormComponent }
 ];
 
 @NgModule({
