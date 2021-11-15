@@ -26,7 +26,7 @@ export class CuadraroComponent implements OnInit {
   }
 
   emitHellow() {
-    this.hellow.next({
+    this.hellow.emit({
       name: this.name,
       color: this.color
     });
