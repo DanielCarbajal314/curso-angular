@@ -1,0 +1,34 @@
+<div>
+    <input type="text" [formControl]="name">
+    <h4 *ngIf="name.dirty && !name.valid">Este campo necesita por lo menos 4 caracters</h4>
+    <button [disabled]="!name.valid" (mouseenter)="validate()">Guardar</button>    
+</div>
+<div>
+    <form [formGroup]="personForm">
+        <input type="text" formControlName = "name">
+        <input type="date" formControlName = "dayOfBirth">
+        <input type="text" formControlName = "gender">
+        <button [disabled]="!personForm.valid">Guardar</button>   
+    </form>
+    <h3>{{ personForm.value | json }}</h3>
+    <h3>{{ personForm.get('name')?.errors | json }}</h3>
+</div>
+<div>
+    <form [formGroup]="personFormWithBuilder">
+        <input type="text" formControlName = "name">
+        <input type="date" formControlName = "dayOfBirth">
+        <input type="text" formControlName = "gender">
+        <div formArrayName="friends">
+            <div *ngFor="let formNode of friends.controls; let i=index">
+                <input type="text" [formControlName]="i">
+            </div>
+            <button (click)="addFriend()">Agregar Amigo</button>
+        </div>
+        
+        <button [disabled]="!personFormWithBuilder.valid">Guardar</button>   
+    </form>
+    <h3>{{ personFormWithBuilder.value | json }}</h3>
+    <h3>{{ personFormWithBuilder.get('name')?.errors | json }}</h3>
+</div>
+
+

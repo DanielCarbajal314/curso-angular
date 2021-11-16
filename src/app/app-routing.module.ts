@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BasicFormComponent } from './basic-form/basic-form.component';
+import { BasicReativeFormComponent } from './basic-reative-form/basic-reative-form.component';
 import { ClockComponent } from './clock/clock.component';
 import { ComunicationComponent } from './comunication/comunication.component';
 import { FirstComponent } from './first/first.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'photos', component: PhotosAlbumComponent }, 
   { path: 'task', component: TaskFormComponent }, 
   { path: 'time', component: ClockComponent },
+  { path: 'basic-reactive-form', component: BasicReativeFormComponent },
 ];
 
 @NgModule({

@@ -8,7 +8,7 @@ import { SecondComponent } from './second/second.component';
 import { PartOfSecondComponent } from './second/part-of-second/part-of-second.component';
 import { ThirdComponent } from './third/third.component';
 import { SnakePipe } from './pipes/snake-case-pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BasicFormComponent } from './basic-form/basic-form.component';
 import { ComunicationComponent } from './comunication/comunication.component';
 import { CuadraroComponent } from './comunication/cuadraro/cuadraro.component';
@@ -24,6 +24,7 @@ import { TaskTableComponent } from './task-form/task-table/task-table.component'
 import { SunatHttpInterceptor } from './shared/sunat-http-interceptor';
 import { timer } from 'rxjs';
 import { ClockComponent } from './clock/clock.component';
+import { BasicReativeFormComponent } from './basic-reative-form/basic-reative-form.component';
 
 @NgModule({
   declarations: [
@@ -44,13 +45,15 @@ import { ClockComponent } from './clock/clock.component';
     TaskFormComponent,
     TaskRegistryFormComponent,
     TaskTableComponent,
-    ClockComponent
+    ClockComponent,
+    BasicReativeFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     // Inyecto el interceptor 
