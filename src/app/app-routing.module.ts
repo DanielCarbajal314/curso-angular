@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BasicFormComponent } from './basic-form/basic-form.component';
+import { ClockComponent } from './clock/clock.component';
 import { ComunicationComponent } from './comunication/comunication.component';
 import { FirstComponent } from './first/first.component';
 import { PersonRegistryComponent } from './person-registry/person-registry.component';
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'basic-comunication', component: ComunicationComponent },  
   { path: 'person-form', component: PersonRegistryComponent },  
   { path: 'photos', component: PhotosAlbumComponent }, 
-  { path: 'task', component: TaskFormComponent }
+  { path: 'task', component: TaskFormComponent }, 
+  { path: 'time', component: ClockComponent },
 ];
 
 @NgModule({

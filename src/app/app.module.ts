@@ -17,10 +17,13 @@ import { PersonRegistryComponent } from './person-registry/person-registry.compo
 import { PersonFormComponent } from './person-registry/person-form/person-form.component';
 import { PersonTableComponent } from './person-registry/person-table/person-table.component';
 import { PhotosAlbumComponent } from './photos-album/photos-album.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { TaskRegistryFormComponent } from './task-form/task-registry-form/task-registry-form.component';
 import { TaskTableComponent } from './task-form/task-table/task-table.component';
+import { SunatHttpInterceptor } from './shared/sunat-http-interceptor';
+import { timer } from 'rxjs';
+import { ClockComponent } from './clock/clock.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,8 @@ import { TaskTableComponent } from './task-form/task-table/task-table.component'
     PhotosAlbumComponent,
     TaskFormComponent,
     TaskRegistryFormComponent,
-    TaskTableComponent
+    TaskTableComponent,
+    ClockComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,12 @@ import { TaskTableComponent } from './task-form/task-table/task-table.component'
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    // Inyecto el interceptor 
+    { provide: HTTP_INTERCEPTORS, useClass: SunatHttpInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { };
+
+
