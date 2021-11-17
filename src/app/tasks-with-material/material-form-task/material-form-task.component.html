@@ -1,0 +1,17 @@
+<mat-card fxFlex="100">
+    <form fxLayout="column" fxLayoutAlign="space-around start" [formGroup]="taskForm">
+        <mat-form-field appearance="fill" fxFill>
+          <mat-label>Descripcion</mat-label>
+          <input type="text" matInput placeholder="describe tu tarea" formControlName="description">
+        </mat-form-field>
+        <mat-form-field appearance="fill" fxFill>
+            <mat-label>Fecha</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>     
+        <button mat-raised-button color="primary" [disabled]="!taskForm.valid" fxFill (click)="onSummit()">Guardar</button> 
+    </form>
+</mat-card>
+
+  
