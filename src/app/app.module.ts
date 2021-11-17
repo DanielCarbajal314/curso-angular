@@ -25,6 +25,12 @@ import { SunatHttpInterceptor } from './shared/sunat-http-interceptor';
 import { timer } from 'rxjs';
 import { ClockComponent } from './clock/clock.component';
 import { BasicReativeFormComponent } from './basic-reative-form/basic-reative-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatStepperModule } from '@angular/material/stepper';
+import { StepperComponent } from './stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -46,14 +52,20 @@ import { BasicReativeFormComponent } from './basic-reative-form/basic-reative-fo
     TaskRegistryFormComponent,
     TaskTableComponent,
     ClockComponent,
-    BasicReativeFormComponent
+    BasicReativeFormComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
+    MatStepperModule
   ],
   providers: [
     // Inyecto el interceptor 

@@ -8,6 +8,7 @@ import { FirstComponent } from './first/first.component';
 import { PersonRegistryComponent } from './person-registry/person-registry.component';
 import { PhotosAlbumComponent } from './photos-album/photos-album.component';
 import { SecondComponent } from './second/second.component';
+import { StepperComponent } from './stepper/stepper.component';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { ThirdComponent } from './third/third.component';
 
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'task', component: TaskFormComponent }, 
   { path: 'time', component: ClockComponent },
   { path: 'basic-reactive-form', component: BasicReativeFormComponent },
+  { path: 'stepper', component: StepperComponent },
 ];
 
 @NgModule({
