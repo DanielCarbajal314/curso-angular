@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AbueloComponent } from './abuelo/abuelo.component';
 import { BasicFormComponent } from './basic-form/basic-form.component';
 import { BasicReativeFormComponent } from './basic-reative-form/basic-reative-form.component';
 import { ClockComponent } from './clock/clock.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'basic-reactive-form', component: BasicReativeFormComponent },
   { path: 'stepper', component: StepperComponent },
   { path: 'material-task', component: TasksWithMaterialComponent },
+  { path: 'grandFather', component: AbueloComponent },
 ];
 
 @NgModule({

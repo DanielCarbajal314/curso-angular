@@ -40,6 +40,9 @@ import { MaterialTableTaskComponent } from './tasks-with-material/material-table
 import { MaterialFormTaskComponent } from './tasks-with-material/material-form-task/material-form-task.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormDialogComponent } from './tasks-with-material/form-dialog/form-dialog.component';
+import { AbueloComponent } from './abuelo/abuelo.component';
+import { PadreComponent } from './abuelo/padre/padre.component';
+import { NietoComponent } from './abuelo/padre/nieto/nieto.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,6 +69,9 @@ import { FormDialogComponent } from './tasks-with-material/form-dialog/form-dial
     MaterialTableTaskComponent,
     MaterialFormTaskComponent,
     FormDialogComponent,
+    AbueloComponent,
+    PadreComponent,
+    NietoComponent,
   ],
   imports: [
     BrowserModule,
